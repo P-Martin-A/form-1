@@ -1,0 +1,40 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html{
+    font-size: 10px;
+
+    @media screen and(max-width: 300px){
+        font-size: 8px;
+    }
+
+    @media screen and(max-width: 250px){
+        font-size: 6px;
+    }
+    
+    body{
+        font-family: $fontFamily;
+        background-color: $first;
+        color: $second;
+        height: 100vh;
+
+        .container{
+            height: 100%;
+            width: 90%;
+            margin: auto;
+            padding: 5rem;
+
+            @media screen and(max-width: 300px){
+                padding: 8rem 3rem;
+            }
+            
+            @media screen and(max-width: 250px){
+                padding: 20rem 3rem;
+            }
+        }
+    }
+}

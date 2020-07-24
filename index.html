@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Icons -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- My Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Form | 1</title>
+</head>
+<body>
+    <!-- <i class="bx bxs-check-circle"></i> -->
+    <main class="container">
+        <form action="" class="form" id="form">
+
+            <!-- BEGIN GROUP NAMES -->
+            <div class="form-group" id="group-names">
+                <label for="names" class="form-label">Nombre/s</label>
+                <div class="form-group-input">
+                    <input type="text" name="names" id="names" class="form-input" placeholder="Jhon">
+                    <i class="bx bxs-x-circle form-validation-state"></i>                    
+                </div>
+                <p class="form-input-error">El nombre de tiene que ser de 4 a 16 digitos y solo puede contener letras.</p>
+            </div>
+            <!-- END GROUP NAMES -->
+
+            <!-- BEGIN GROUP SURNAMES -->
+            <div class="form-group" id="group-surnames">
+                <label for="surnames" class="form-label">Apellido/s</label>
+                <div class="form-group-input">
+                    <input type="text" name="surnames" id="surnames" class="form-input" placeholder="Doe">
+                    <i class="bx bxs-x-circle form-validation-state"></i>                    
+                </div>
+                <p class="form-input-error">El nombre de tiene que ser de 4 a 16 digitos y solo puede contener letras.</p>
+            </div>
+            <!-- END GROUP SURNAMES -->
+
+            <!-- BEGIN GROUP PASSWORD -->
+            <div class="form-group" id="group-password">
+                <label for="password" class="form-label">Contraseña</label>
+                <div class="form-group-input">
+                    <input type="password" name="password" id="password" class="form-input">
+                    <i class="bx bxs-x-circle form-validation-state"></i>                    
+                </div>
+                <p class="form-input-error">La contraseña tiene que ser de 4 a 12 digitos.</p>
+            </div>
+            <!-- END GROUP PASSWORD -->
+
+            <!-- BEGIN GROUP REPEAT PASSWORD -->
+            <div class="form-group" id="group-repeat-password">
+                <label for="repeat-password" class="form-label">Repetir Contraseña</label>
+                <div class="form-group-input">
+                    <input type="password" name="repeat-password" id="repeat-password" class="form-input">
+                    <i class="bx bxs-x-circle form-validation-state"></i>                    
+                </div>
+                <p class="form-input-error">Ambas contraseñas deben de ser iguales.</p>
+            </div>
+            <!-- END GROUP REPEAT PASSWORD -->
+
+            <!-- BEGIN GROUP EMAIL -->
+            <div class="form-group" id="group-email">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <div class="form-group-input">
+                    <input type="email" name="email" id="email" class="form-input" placeholder="correo@correo.com">
+                    <i class="bx bxs-x-circle form-validation-state"></i>                    
+                </div>
+                <p class="form-input-error">El correo solo puede contener letras, números, puntos, guiones y guion bajo.</p>
+            </div>
+            <!-- END GROUP EMAIL -->
+
+            <!-- BEGIN GROUP PHONE -->
+            <div class="form-group" id="group-phone">
+                <label for="phone" class="form-label">Teléfono</label>
+                <div class="form-group-input">
+                    <input type="text" name="phone" id="phone" class="form-input" placeholder="3863431212">
+                    <i class="bx bxs-x-circle form-validation-state"></i>                    
+                </div>
+                <p class="form-input-error">El Teléfono solo puede contener números y el maximo son 14 digitos.</p>
+            </div>
+            <!-- END GROUP PHONE -->
+            
+            <!-- BEGIN TERMS AND CONDITIONS -->
+            <div class="form-terms" id="group-terms">
+                <label class="form-label">
+                    <input type="checkbox" name="terms" id="terms" class="form-input">
+                    Acepto los términos y condiciones
+                </label>
+            </div>
+            <!-- END TERMS AND CONDITIONS -->
+
+            <!-- BEGIN SUBMIT ERROR -->
+            <div class="form-error" id="form-error">
+                <i class="bx bxs-error i-error"><h4 class="error">Error: Por favor rellene el formulario correctamente.</h4></i>
+            </div>
+            <!-- END SUBMIT ERROR -->
+
+            <!-- BEGIN BUTTON -->
+            <div class="form-group form-group-btn">
+                <button type="submit" class="form-btn">Enviar</button>
+                <p class="form-message-ok" id="form-message-ok"><i class='bx bxs-like' ></i> Formulario Enviado</p>
+            </div>
+            <!-- END BUTTON -->
+
+        </form>
+    </main>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

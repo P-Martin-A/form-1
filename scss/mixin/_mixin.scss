@@ -1,0 +1,7 @@
+@mixin grid-column{
+    grid-column: span 2;
+
+    @media screen and(max-width: 500px){
+        grid-column: 1;
+    }
+}
